@@ -20,7 +20,7 @@ brew tap homebrew/bundle
 brew bundle
 
 # Set default MySQL root password and auth type
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;"
 
 # Install PHP extensions with PECL
 pecl install imagick memcached redis swoole
@@ -32,12 +32,10 @@ pecl install imagick memcached redis swoole
 $HOME/.composer/vendor/bin/valet install
 
 # Create a Sites directory
-mkdir $HOME/Sites
+mkdir $HOME/www
 
 # Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
+mkdir $HOME/Workspace/dotfiles
 
 # Clone Github repositories
 ./clone.sh
