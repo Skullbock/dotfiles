@@ -27,7 +27,10 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias cu="COMPOSER_MEMORY_LIMIT=-1 composer update"
 alias cdu="COMPOSER_MEMORY_LIMIT=-1 composer dump-autoload"
-alias pu="vendor/bin/phpunit --stop-on-failure"
+alias test="vendor/bin/phpunit --stop-on-failure"
+alias php74="valet use php@7.4 --force"
+alias php80="valet use php@8.0 --force"
+alias php81="valet use php@8.1 --force"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
