@@ -4,18 +4,19 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
+tap 'stripe/stripe-cli'
 
 # Binaries
 # brew 'awscli'
 brew 'bash' # Latest Bash version
+brew 'bat' # Used for spatie/visit
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
 brew 'git'
-brew 'gnupg'
 brew 'grep'
 brew 'httpie'
-brew 'hub'
+brew 'jq' # Used for spatie/visit
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
@@ -34,13 +35,11 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
+brew 'php@8.0'
 brew 'php@7.4'
-#brew 'php@7.3'
 brew 'composer'
 brew 'imagemagick'
-brew 'libmemcached'
-#brew 'meilisearch'
-brew 'memcached'
+brew 'meilisearch'
 brew 'mysql'
 brew 'nginx'
 brew 'node'
@@ -61,12 +60,11 @@ cask 'sketch'
 #cask 'github'
 #cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'gpg-suite'
+cask 'helo'
 cask 'imageoptim'
 # cask 'insomnia'
 cask 'pastebot'
 cask 'phpmon'
-cask 'phpstorm'
 cask 'ray'
 #cask 'screenflow'
 #cask 'signal'
